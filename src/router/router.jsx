@@ -1,22 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { Root } from "../Root";
-import { AuthLayout, DashboardLayout } from "../layouts";
-import { LoginPage } from "../pages";
+import { Root } from "../Route";
+import { HomePage } from "../pages/Home";
+import { AuthLayout } from "../layouts/AuthLayout";
+import { LoginPage } from "../pages/Auth/LoginPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     children: [
-      /// Dashboard Routes
-      {
-        path: "dashboard",
-        element: <DashboardLayout />,
-        children: [],
-      },
-
       /// Auth Routes
+      {
+        path: "home",
+        element: <HomePage />,
+      },
       {
         path: "auth",
         element: <AuthLayout />,
