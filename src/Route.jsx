@@ -8,7 +8,7 @@ export const Root = () => {
   }
 
   return (
-    <main>
+    <main className="min-h-[100vh]">
       <Outlet />
     </main>
   );
