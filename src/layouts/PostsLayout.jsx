@@ -9,7 +9,7 @@ const navigation = [
 ];
 import { Outlet } from "react-router-dom";
 
-export const AuthLayout = () => {
+export const PostsLayout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -36,7 +36,7 @@ export const AuthLayout = () => {
             </a>
           </div>
           <a
-            href="login"
+            href="/auth/login"
             className="flex rounded-full bg-white border border-buddies-blue-700 px-6 py-1 text-sm font-semibold text-buddies-blue-700 shadow-sm hover:bg-buddies-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-buddies-blue-700"
           >
             Ingresar
