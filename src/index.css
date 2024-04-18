@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   min-height: 100vh;
+  --heigth-navbar: 60px;
 }
 
 body{
