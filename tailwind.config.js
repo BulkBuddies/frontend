@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        "[auto,auto,1fr]": "auto auto 1fr",
+      },
       colors: {
         "buddies-blue": {
           50: "#f0f6fe",
@@ -29,5 +32,7 @@ export default {
     // eslint-disable-next-line no-undef
     require("@tailwindcss/forms"),
     "flowbite/plugin",
+    "@tailwindcss/aspect-ratio",
+    "@tailwindcss/typography",
   ],
 };
